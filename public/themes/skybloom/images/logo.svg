@@ -1,0 +1,25 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A7D8F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B7D8A8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#skyGradient)" opacity="0.2"/>
+
+  <!-- Flower petals -->
+  <g transform="translate(30, 30)">
+    <ellipse cx="0" cy="-8" rx="6" ry="10" fill="#F6B6A5" opacity="0.8"/>
+    <ellipse cx="8" cy="0" rx="6" ry="10" fill="#F6B6A5" opacity="0.8" transform="rotate(90 0 0)"/>
+    <ellipse cx="0" cy="8" rx="6" ry="10" fill="#F6B6A5" opacity="0.8" transform="rotate(180 0 0)"/>
+    <ellipse cx="-8" cy="0" rx="6" ry="10" fill="#F6B6A5" opacity="0.8" transform="rotate(270 0 0)"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="5" fill="#F7D74C"/>
+  </g>
+
+  <!-- Text -->
+  <text x="65" y="25" font-family="Playfair Display, serif" font-size="18" font-weight="700" fill="#A97C50">Thejoflowers</text>
+  <text x="65" y="42" font-family="Inter, sans-serif" font-size="12" fill="#A7D8F0">Korean Florist</text>
+</svg>

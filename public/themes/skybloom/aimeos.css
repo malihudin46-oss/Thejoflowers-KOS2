@@ -1,0 +1,406 @@
+/*
+ * Aimeos Sky Bloom Garden theme CSS
+ * Korean Florist Web App
+ *
+ * Color palette:
+ * - Sky Blue: #A7D8F0
+ * - Cloud Blue: #D7ECFA
+ * - Sunshine Yellow: #F7D74C
+ * - Pastel Meadow Green: #B7D8A8
+ * - Warm Beige: #F3E8D3
+ * - Coral Peach: #F6B6A5
+ * - Soft Brown: #A97C50
+ *
+ * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
+ * @copyright Thejoflowers (thejoflowers.com), 2025
+ */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* Reset and base styles */
+.aimeos,
+.aimeos h1, .aimeos h2,
+.aimeos h3, .aimeos h4 {
+    font-weight: normal;
+    font-size: 100%;
+    color: #A97C50;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Background and overall layout */
+body {
+    background: linear-gradient(135deg, #D7ECFA 0%, #F3E8D3 100%);
+    background-attachment: fixed;
+}
+
+.aimeos {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #A97C50;
+}
+
+/* Typography */
+.aimeos h1, .aimeos h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: none;
+    font-weight: 600;
+    color: #A97C50;
+    margin-bottom: 1rem;
+}
+
+.aimeos h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #A7D8F0, #B7D8A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aimeos h2 {
+    font-size: 1.8rem;
+    color: #B7D8A8;
+}
+
+.aimeos h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #F6B6A5;
+    margin: 1.5rem 0 0.8rem 0;
+}
+
+.aimeos h4 {
+    font-size: 1.1rem;
+    color: #A7D8F0;
+    font-weight: 500;
+}
+
+/* Buttons with Sky Bloom Garden styling */
+.aimeos .standardbutton {
+    background: linear-gradient(135deg, #A7D8F0 0%, #B7D8A8 100%);
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    min-width: 8em;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(167, 216, 240, 0.3);
+    font-family: 'Inter', sans-serif;
+}
+
+.aimeos .standardbutton:link,
+.aimeos .standardbutton:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.aimeos .standardbutton:hover {
+    background: linear-gradient(135deg, #B7D8A8 0%, #A7D8F0 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(183, 216, 168, 0.4);
+}
+
+.aimeos .standardbutton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(167, 216, 240, 0.3);
+}
+
+/* Primary button variation */
+.aimeos .btn-primary {
+    background: linear-gradient(135deg, #F7D74C 0%, #F6B6A5 100%);
+    box-shadow: 0 4px 15px rgba(247, 215, 76, 0.3);
+}
+
+.aimeos .btn-primary:hover {
+    background: linear-gradient(135deg, #F6B6A5 0%, #F7D74C 100%);
+    box-shadow: 0 6px 20px rgba(246, 182, 165, 0.4);
+}
+
+/* Card and container styling */
+.aimeos .card,
+.aimeos .content-box,
+.aimeos .product-item,
+.aimeos .basket-item {
+    background: #FFFFFF;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 8px 32px rgba(243, 232, 211, 0.4);
+    border: 2px solid #F3E8D3;
+    transition: all 0.3s ease;
+}
+
+.aimeos .card:hover,
+.aimeos .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(167, 216, 240, 0.3);
+    border-color: #A7D8F0;
+}
+
+/* Product grid and list styling */
+.aimeos .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.aimeos .product-image {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.aimeos .product-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.aimeos .product-image:hover img {
+    transform: scale(1.05);
+}
+
+.aimeos .product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #A97C50;
+    margin-bottom: 0.5rem;
+}
+
+.aimeos .product-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #B7D8A8;
+    margin-bottom: 1rem;
+}
+
+/* Form styling */
+.aimeos input,
+.aimeos select,
+.aimeos textarea {
+    background: #FFFFFF;
+    border: 2px solid #D7ECFA;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Inter', sans-serif;
+    color: #A97C50;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(215, 236, 250, 0.2);
+}
+
+.aimeos input:focus,
+.aimeos select:focus,
+.aimeos textarea:focus {
+    outline: none;
+    border-color: #A7D8F0;
+    box-shadow: 0 4px 15px rgba(167, 216, 240, 0.3);
+    background: #FFFFFF;
+}
+
+.aimeos label {
+    display: block;
+    font-weight: 500;
+    color: #A97C50;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navigation and header */
+.aimeos .navigation,
+.aimeos .header {
+    background: linear-gradient(135deg, #F3E8D3 0%, #FFFFFF 100%);
+    border-radius: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 20px rgba(243, 232, 211, 0.5);
+    border: 1px solid #D7ECFA;
+}
+
+.aimeos .navigation a,
+.aimeos .header a {
+    color: #A97C50;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.aimeos .navigation a:hover,
+.aimeos .header a:hover {
+    background: #A7D8F0;
+    color: #FFFFFF;
+}
+
+/* Basket and checkout styling */
+.aimeos .basket-summary {
+    background: linear-gradient(135deg, #B7D8A8 0%, #D7ECFA 100%);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    color: #A97C50;
+}
+
+.aimeos .basket-total {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #A97C50;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.aimeos .checkout-step {
+    background: #FFFFFF;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-left: 4px solid #A7D8F0;
+    box-shadow: 0 4px 15px rgba(215, 236, 250, 0.3);
+}
+
+/* Footer */
+.aimeos .footer {
+    background: linear-gradient(135deg, #A97C50 0%, #F3E8D3 100%);
+    color: #FFFFFF;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    text-align: center;
+}
+
+.aimeos .footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.aimeos .footer a:hover {
+    text-decoration: underline;
+}
+
+/* Utility classes */
+.aimeos .text-center {
+    text-align: center;
+}
+
+.aimeos .text-sky {
+    color: #A7D8F0;
+}
+
+.aimeos .text-meadow {
+    color: #B7D8A8;
+}
+
+.aimeos .text-sunshine {
+    color: #F7D74C;
+}
+
+.aimeos .text-coral {
+    color: #F6B6A5;
+}
+
+.aimeos .bg-sky-light {
+    background: linear-gradient(135deg, #D7ECFA 0%, #F3E8D3 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.aimeos .bg-meadow {
+    background: linear-gradient(135deg, #B7D8A8 0%, #D7ECFA 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .aimeos .product-list {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .aimeos .card,
+    .aimeos .content-box {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .aimeos h1 {
+        font-size: 2rem;
+    }
+
+    .aimeos h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .aimeos .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .aimeos .standardbutton {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Loading and animation states */
+.aimeos .loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.aimeos .spinner {
+    border: 3px solid #D7ECFA;
+    border-top: 3px solid #A7D8F0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Special floral decorative elements */
+.aimeos .floral-border {
+    position: relative;
+    border: 2px solid #B7D8A8;
+    border-radius: 1rem;
+    background: linear-gradient(45deg, #FFFFFF 0%, #F3E8D3 100%);
+}
+
+.aimeos .floral-border::before {
+    content: "✿";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    background: #FFFFFF;
+    color: #B7D8A8;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
+
+.aimeos .floral-border::after {
+    content: "✿";
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+    background: #FFFFFF;
+    color: #B7D8A8;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+}
